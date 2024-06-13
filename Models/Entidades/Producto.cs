@@ -19,9 +19,10 @@ namespace Models.Entidades
         public int CategoriaId { get; set; }
         [ForeignKey("CategoriaId")]
         public Categoria Categoria { get; set; }
-        
+
         public int MarcaId { get; set; }
         [ForeignKey("MarcaId")]
         public Marca Marca { get; set; }
+        public PrecioOferta Promocion { get; set; }
     }
 }
